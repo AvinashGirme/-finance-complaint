@@ -3,7 +3,7 @@ import os,sys
 from finance_complaint.exception import FinanceException
 from finance_complaint.logger import logger
 from finance_complaint.constant import TIMESTAMP
-from finance_complaint.entity.config_entity import DataIngestionConfig
+from finance_complaint.entity.config_entity import DataIngestionConfig,TrainingPipelineConfig
 from finance_complaint.constant.training_pipeline_config import *
 import os,sys
 import requests,json
