@@ -47,3 +47,14 @@ def create_directories(directories_list: List[str],new_directory=False):
     except Exception as e:
         raise FinanceException(e, sys)
 
+def get_score(dataframe:DataFrame,metric_name,label_col,prediction_col) -> float:
+    try:
+        evaluator = MulticlassClassificationEvaluator(
+            labelCol=label_col,predictionCol=prediction_col,
+            metricName=metric_name)
+        score=evaluator.evaluate(dataframe)
+        print(f"{metric_name} score: {score}")
+        logger.info(f"{metric_name} score:{score}")
+        return score
+    except Exception as e:
+        raise FinanceException(e, sys)

@@ -27,6 +27,7 @@ def start_training(start=False):
 def main(training_status):
     try:
         start_training(start=training_status)
+        
     except Exception as e:
         raise FinanceException(e, sys)
 
