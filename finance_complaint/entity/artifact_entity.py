@@ -17,7 +17,7 @@ PartialModelTrainerMetricArtifact = namedtuple("PartialModelTrainerMetricArtifac
 class ModelTrainerArtifact:
     def __init__(self,model_trainer_ref_artifact: PartialModelTrainerRefArtifact,
                     model_trainer_train_metric_artifact:PartialModelTrainerMetricArtifact,
-                    model_trainer_test_metric_artifact: PartailModelTrainerMetricArtifact):
+                    model_trainer_test_metric_artifact: PartialModelTrainerMetricArtifact):
 
         self.model_trainer_ref_artifact = model_trainer_ref_artifact
         self.model_trainer_train_metric_artifact=model_trainer_train_metric_artifact
