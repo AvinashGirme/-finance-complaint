@@ -41,7 +41,6 @@ def main(training_status,prediction_status):
         raise FinanceException(e, sys)
 
 
-
 if __name__=="__main__":
     try:
         parser=argparse.ArgumentParser()
@@ -50,7 +49,7 @@ if __name__=="__main__":
 
         args=parser.parse_args()
         main(training_status=args.t,prediction_status=args.p)
-        
+
 
     except Exception as e:
         print(e)
